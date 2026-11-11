@@ -1,7 +1,0 @@
-Welcome to Noise. This isn't just another music player. It is a love letter to the era of glowing phosphors and chunky scanlines, built specifically for the modern streaming age. If you run a Navidrome or Subsonic server, you already know how great it is to truly own your music. Now you can experience that entire library through an interface that feels like it was ripped straight out of a nineties cyberpunk hacker den. 
-
-I designed the aesthetic from the ground up to be deeply immersive. Every single element pulses with that authentic CRT glow, giving your digital tracks a warm and nostalgic visual wrapper. You can instantly connect to your home server and start streaming without any complicated setup. It just works. And because music is always better together, there is a built-in lounge feature. You can hang out in custom rooms, chat with friends, and share exactly what you are listening to in real time. 
-
-Whether you are on Windows, macOS, or Linux, the experience is completely seamless. The app is fully self-contained and ready to go right out of the box. I also wanted to make sure you never have to worry about missing out on new features. That is why automatic background updates are baked right into the core experience. Just launch the app, kick back, and let it handle the rest.
-
-Head over to the releases tab to grab the latest version for your system. I built this project because I wanted a music player that actually had some soul. I hope you enjoy using it just as much as I enjoyed bringing it to life.
