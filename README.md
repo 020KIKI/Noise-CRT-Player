@@ -69,16 +69,27 @@ NOISE uses **two audio decks** for seamless transitions:
 
 ## 📸 Screenshots
 
-> **Add your screenshots here!** Place the files in the `assets/` folder and keep the
-> filenames below (or rename the paths).
+### 🎵 Library View
+<p align="center">
+  <img src="assets/Screenshot_1.webp" alt="NOISE library view" width="100%" />
+</p>
 
-| Library | Player Bar | Fullscreen Stage |
-|---|---|---|
-| ![Library view](assets/screenshot-library.png) | ![Player bar](assets/screenshot-player.png) | ![Stage](assets/screenshot-stage.png) |
+### 🖥️ Fullscreen Stage
+<p align="center">
+  <img src="assets/Screenshot_2.webp" alt="NOISE fullscreen stage" width="100%" />
+</p>
 
-| Themes | Settings | Cyber Lounge |
-|---|---|---|
-| ![Themes](assets/screenshot-themes.png) | ![Settings](assets/screenshot-settings.png) | ![Lounge](assets/screenshot-lounge.png) |
+### 🪟 Widget & Mini Player
+<table align="center">
+  <tr>
+    <td align="center"><img src="assets/Screenshot_3.webp" alt="NOISE widget player" width="340" /></td>
+    <td align="center"><img src="assets/Screenshot_4.webp" alt="NOISE mini player" width="340" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Widget Player</b></td>
+    <td align="center"><b>Mini Player</b></td>
+  </tr>
+</table>
 
 ---
 
