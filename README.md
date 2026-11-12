@@ -7,7 +7,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square" alt="Platform" />
-  <img src="https://img.shields.io/badge/version-1.9.0-brightgreen?style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/badge/version-2.0.0-brightgreen?style=flat-square" alt="Version" />
   <img src="https://img.shields.io/badge/protocol-Subsonic%20REST%20v1.16.1-orange?style=flat-square" alt="Subsonic" />
   <img src="https://img.shields.io/badge/audio-WebAudio%20DSP-purple?style=flat-square" alt="WebAudio" />
 </p>
@@ -40,7 +40,18 @@ like it was ripped straight out of a nineties cyberpunk hacker den.
 | 🖼️ | **Fullscreen Stage** — huge album art with reactive aura and CRT channel-change static |
 | 👥 | **Cyber Lounge** — create rooms, chat with friends and share what you're listening to in real time |
 | 🤖 | **Discodrome bridge** — Discord Rich Presence & remote control |
-| 🔁 | **Automatic background updates** built into the core experience |
+| 🔁 | **Portable & open source** — Windows, macOS and Linux builds, no account required |
+
+---
+
+## 🆕 What's new in 2.0
+
+- **Three-stage HDR Phosphor Boost** — `OFF` / `SOFT` / `STRONG`, with a gentler `SOFT` mode tuned for OLED/HDR displays.
+- **Queue drag & drop** — reorder the playback queue with the same handle-based drag system as playlists.
+- **Real scrobbles** — completed plays are submitted to Navidrome/Last.fm after 50% or 4 minutes.
+- **Refined glows** — multi-layer soft shadows reduce banding and remove clipped glow edges across the player and widget.
+- **Playlist search** — the playlist header search opens as a connected pill with live filtering.
+- **Discord Control polish** — official Discord blurple, matching LIVE/BOT badges and softer player glows.
 
 ---
 
@@ -99,17 +110,19 @@ Head over to the **[Releases](../../releases)** tab and grab the build for your 
 
 | Platform | File |
 |---|---|
-| 🪟 **Windows** | `Noise-1.9.0-win.zip` (or the `.exe` installer) |
-| 🍎 **macOS (Apple Silicon)** | `Noise-1.9.0-macOS-AppleSilicon-arm64.dmg` |
-| 🍎 **macOS (Intel)** | `Noise-1.9.0-macOS-Intel-x64.dmg` |
-| 🐧 **Linux** | `noise-1.9.0.tar.gz` |
+| 🪟 **Windows** | `Noise-2.0.0-win.zip` (or the `.exe` installer) |
+| 🍎 **macOS (Apple Silicon)** | `Noise-2.0.0-macOS-AppleSilicon-arm64.dmg` |
+| 🍎 **macOS (Intel)** | `Noise-2.0.0-macOS-Intel-x64.dmg` |
+| 🐧 **Linux** | `noise-2.0.0.tar.gz` |
+
+SHA-256 checksums for all 2.0.0 builds are included in `SHA256SUMS-2.0.0.txt`.
 
 ---
 
 ## 🚀 Installation
 
 ### Windows
-Extract `Noise-1.9.0-win.zip` and run **`Noise.exe`**. No installation required.
+Extract `Noise-2.0.0-win.zip` and run **`Noise.exe`**. No installation required.
 
 ### macOS
 1. Open the DMG and drag **Noise.app** into **Applications**.
@@ -127,8 +140,8 @@ sudo xattr -rd com.apple.quarantine /Applications/Noise.app
 
 ### Linux
 ```bash
-tar -xzf noise-1.9.0.tar.gz
-cd noise-1.9.0
+tar -xzf noise-2.0.0.tar.gz
+cd noise-2.0.0
 ./noise          # or ./start-noise.sh
 ```
 
