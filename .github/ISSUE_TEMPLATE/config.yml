@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the latest NOISE release
+    url: https://github.com/pipio2314-cell/Noise-CRT-Player/releases/latest
+    about: Get the newest official build for Windows, macOS or Linux.
