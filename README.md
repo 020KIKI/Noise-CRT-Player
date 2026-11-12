@@ -40,7 +40,7 @@ like it was ripped straight out of a nineties cyberpunk hacker den.
 | 🖼️ | **Fullscreen Stage** — huge album art with reactive aura and CRT channel-change static |
 | 👥 | **Cyber Lounge** — create rooms, chat with friends and share what you're listening to in real time |
 | 🤖 | **Discodrome bridge** — Discord Rich Presence & remote control |
-| 🔁 | **Portable & open source** — Windows, macOS and Linux builds, no account required |
+| 🔁 | **Freeware & portable** — Windows, macOS and Linux builds, no account required |
 
 ---
 
@@ -117,6 +117,8 @@ Head over to the **[Releases](../../releases)** tab and grab the build for your 
 
 SHA-256 checksums for all 2.0.0 builds are included in `SHA256SUMS-2.0.0.txt`.
 
+NOISE is freeware for personal, non-commercial use. See [LICENSE](LICENSE) for the full terms.
+
 ---
 
 ## 🚀 Installation
@@ -147,29 +149,15 @@ cd noise-2.0.0
 
 ---
 
-## 🛠️ Build from source
+## 📄 License
 
-```bash
-git clone https://github.com/pipio2314-cell/Noise-CRT-Player.git
-cd Noise-CRT-Player
-npm install
-npm run build
-```
+NOISE is **freeware**, not open source.
 
-**Desktop builds:**
+- Free for personal, non-commercial use
+- Redistribution, modification, reverse engineering, and commercial use are not permitted
+- All rights reserved
 
-```bash
-# Windows (ZIP + installer)
-npm run electron:build
-
-# Linux (tar.gz with icon + launcher)
-npm run build && electron-builder --linux dir
-python scripts/pack-linux.py --tar-only
-
-# macOS (DMG — Apple Silicon / Intel)
-python scripts/create-mac-dmg.py --arch=arm64
-python scripts/create-mac-dmg.py --arch=x64
-```
+See [LICENSE](LICENSE) for the full terms. Third-party components remain under their respective licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -195,10 +183,17 @@ Everything visual lives in **Settings**:
 
 ---
 
-## 🤝 Contributing
+## 🐞 Bug Reports
 
-Issues and pull requests are welcome. If you build something cool with NOISE,
-I'd love to see it.
+Bug reports are welcome! Please open an issue with:
+
+- the NOISE version
+- your operating system and version
+- steps to reproduce the problem
+- expected vs. actual behavior
+- screenshots or logs if available
+
+**Code contributions and pull requests are not accepted.** See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
