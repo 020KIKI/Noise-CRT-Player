@@ -7,7 +7,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square" alt="Platform" />
-  <img src="https://img.shields.io/badge/version-2.0.0-brightgreen?style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/badge/version-2.2.3-brightgreen?style=flat-square" alt="Version" />
   <img src="https://img.shields.io/badge/protocol-Subsonic%20REST%20v1.16.1-orange?style=flat-square" alt="Subsonic" />
   <img src="https://img.shields.io/badge/audio-WebAudio%20DSP-purple?style=flat-square" alt="WebAudio" />
 </p>
@@ -44,14 +44,15 @@ like it was ripped straight out of a nineties cyberpunk hacker den.
 
 ---
 
-## 🆕 What's new in 2.0
+## 🆕 What's new in 2.2.3
 
-- **Three-stage HDR Phosphor Boost** — `OFF` / `SOFT` / `STRONG`, with a gentler `SOFT` mode tuned for OLED/HDR displays.
-- **Queue drag & drop** — reorder the playback queue with the same handle-based drag system as playlists.
-- **Real scrobbles** — completed plays are submitted to Navidrome/Last.fm after 50% or 4 minutes.
-- **Refined glows** — multi-layer soft shadows reduce banding and remove clipped glow edges across the player and widget.
-- **Playlist search** — the playlist header search opens as a connected pill with live filtering.
-- **Discord Control polish** — official Discord blurple, matching LIVE/BOT badges and softer player glows.
+- **Stage Live Lyrics** — press `L` or use the new lyrics button between Loop and Heart. The lyrics panel is exactly as tall as the cover, floats on the Stage without a background box, fades softly at the top and bottom, and only appears while the song is playing.
+- **Smooth lyrics** — fixed 48px-free layout with measured line heights; long wrapping lines no longer jump or push the other lyrics. No loading spinner between songs.
+- **Offline library & covers** — cached albums, tracks, artists, playlists, starred songs, radios and cover files stay available when the server is unreachable, with a clear OFFLINE · CACHED LIBRARY indicator.
+- **Instant details** — playlist tracks, albums and artists are cached in memory and IndexedDB, so reopening them is immediate while a silent refresh runs in the background.
+- **Long playlist & queue performance** — windowed rows, stable scroll heights, lazy covers and a fixed drag auto-scroll that keeps up through long lists and works on high-refresh displays.
+- **Faster search & add-to-playlist** — deferred library/playlist search and a cached Add-to-Playlist check without one request per playlist.
+- **Polish & fixes** — Space handling in Stage, playlist counters, optimistic track removal, a calmer NEW UPDATE entry, update-notes filtering and the Windows ZIP updater.
 
 ---
 
@@ -110,12 +111,22 @@ Head over to the **[Releases](../../releases)** tab and grab the build for your 
 
 | Platform | File |
 |---|---|
-| 🪟 **Windows** | `Noise-2.0.0-win.zip` (or the `.exe` installer) |
-| 🍎 **macOS (Apple Silicon)** | `Noise-2.0.0-macOS-AppleSilicon-arm64.dmg` |
-| 🍎 **macOS (Intel)** | `Noise-2.0.0-macOS-Intel-x64.dmg` |
-| 🐧 **Linux** | `noise-2.0.0.tar.gz` |
+| 🪟 **Windows** | `Noise-2.2.3-win.zip` (or the `.exe` installer) |
+| 🍎 **macOS (Apple Silicon)** | `Noise-2.2.3-macOS-AppleSilicon-arm64.dmg` |
+| 🍎 **macOS (Intel)** | `Noise-2.2.3-macOS-Intel-x64.dmg` |
+| 🐧 **Linux** | `noise-2.2.3.tar.gz` |
 
-SHA-256 checksums for all 2.0.0 builds are included in `SHA256SUMS-2.0.0.txt`.
+SHA-256 checksums for all 2.2.3 builds are included in `SHA256SUMS-2.2.3.txt`.
+
+> **Upgrading from 2.0.0:** the GitHub account was renamed from `pipio2314-cell` to `020KIKI`. Please download 2.2.3 manually once; after that, future updates work automatically.
+>
+> **Upgrading from 2.2.1:** the old updater needs one manual update. Download 2.2.3 once; after that, Windows self-updates work.
+>
+> **Upgrading from 2.2.2:** Windows uses the in-app ZIP self-update, macOS keeps the DMG workflow and Linux updates the tar.gz in place.
+>
+> **Upgrading from 2.2.0 (installed):** 2.2.0 uses the installer once for this update. After that, Windows updates are in-app via ZIP.
+>
+> **Upgrading from 2.2.0 (portable ZIP):** extract `Noise-2.2.3-win.zip` over the old folder once, then start `Noise.exe`. Future updates are in-app.
 
 NOISE is freeware for personal, non-commercial use. See [LICENSE](LICENSE) for the full terms.
 
@@ -124,7 +135,7 @@ NOISE is freeware for personal, non-commercial use. See [LICENSE](LICENSE) for t
 ## 🚀 Installation
 
 ### Windows
-Extract `Noise-2.0.0-win.zip` and run **`Noise.exe`**. No installation required.
+Extract `Noise-2.2.3-win.zip` and run **`Noise.exe`**. No installation required.
 
 ### macOS
 1. Open the DMG and drag **Noise.app** into **Applications**.
@@ -142,8 +153,8 @@ sudo xattr -rd com.apple.quarantine /Applications/Noise.app
 
 ### Linux
 ```bash
-tar -xzf noise-2.0.0.tar.gz
-cd noise-2.0.0
+tar -xzf noise-2.2.3.tar.gz
+cd noise-2.2.3
 ./noise          # or ./start-noise.sh
 ```
 
