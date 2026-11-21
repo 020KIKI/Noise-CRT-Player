@@ -7,7 +7,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square" alt="Platform" />
-  <img src="https://img.shields.io/badge/version-2.2.4-brightgreen?style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/badge/version-2.2.5-brightgreen?style=flat-square" alt="Version" />
   <img src="https://img.shields.io/badge/protocol-Subsonic%20REST%20v1.16.1-orange?style=flat-square" alt="Subsonic" />
   <img src="https://img.shields.io/badge/audio-WebAudio%20DSP-purple?style=flat-square" alt="WebAudio" />
 </p>
@@ -31,7 +31,7 @@ like it was ripped straight out of a nineties cyberpunk hacker den.
 
 | | Feature |
 |---|---|
-| 🖥️ | **Authentic CRT aesthetic** — phosphor glow, scanlines, curvature, flicker & glass glare |
+| 🖥️ | **Authentic CRT aesthetic** — phosphor glow, scanlines, curvature & flicker |
 | 🎛️ | **8 phosphor themes** — classic green, amber, ice white, cyberpunk, synthwave, blood quartz, arcade '84, custom |
 | 🎨 | **Font presets** — Classic, Terminal (Share Tech Mono) and Modern (Be Vietnam Pro) |
 | 🎧 | **Real crossfade** — equal-power blending from 1–12 seconds (off by default) |
@@ -44,13 +44,17 @@ like it was ripped straight out of a nineties cyberpunk hacker den.
 
 ---
 
-## 🆕 What's new in 2.2.4
+## 🆕 What's new in 2.2.5
 
-2.2.4 is a packaging fix release — all features are the 2.2.3 ones.
+2.2.5 is the biggest polish release since 2.2.0: the library scrolls endlessly, artist pages open instantly, and the frameless window gets real Windows Snap plus CRT window-control animations.
 
-- **macOS starts again** — the 2.2.3 DMGs shipped without the Unix execute bit on `Noise` and every Electron helper, so macOS refused to launch the app. 2.2.4 fixes the packer and now fails the build if any Mach-O binary is not executable.
-- **Windows taskbar icon** — the app no longer forces an AppUserModelID, so portable copies and leftover shortcuts from older installs show the real robot icon instead of the generic white page.
-- **Everything from 2.2.3** — Stage Live Lyrics, offline library and covers, cached playlist/album/artist details and the long-playlist performance work are included.
+- **Infinite library** — pagination is gone. All library tabs load more items seamlessly while scrolling (40-item batches); the page selector and the old *Items per page* setting were removed.
+- **Instant artist pages** — skeleton grid while loading, progressive album batches (24 covers) and hover prefetch; huge discographies no longer freeze the app.
+- **No-flash drilldowns** — album, artist and playlist views keep the grid alive, restore the scroll position and slide in/out cleanly.
+- **Windows Snap** — drag to edges/corners for halves, quarters, top maximize or bottom half; a translucent preview in the current accent colour follows the drag. Multi-monitor aware.
+- **CRT window controls** — minimize powers the tube down to a line in 0.38 s; maximize/restore gets a beam sweep, flash and smooth screen zoom. The centre titlebar zone supports both double-click and dragging.
+- **Window state fixes** — stage mode and mini/widget mode return to the maximized window instead of the old small bounds.
+- **Polish** — chat icon and active state use the accent colour, scrollbar ghost lines are fixed, sidebar dividers cleaned up, Settings consolidated and the **SOUND** tab groups EQ, playback and chat audio.
 
 ---
 
@@ -109,22 +113,22 @@ Head over to the **[Releases](../../releases)** tab and grab the build for your 
 
 | Platform | File |
 |---|---|
-| 🪟 **Windows** | `Noise-2.2.4-win.zip` (or the `.exe` installer) |
-| 🍎 **macOS (Apple Silicon)** | `Noise-2.2.4-macOS-AppleSilicon-arm64.dmg` |
-| 🍎 **macOS (Intel)** | `Noise-2.2.4-macOS-Intel-x64.dmg` |
-| 🐧 **Linux** | `noise-2.2.4.tar.gz` |
+| 🪟 **Windows** | `Noise-2.2.5-win.zip` (or the `.exe` installer) |
+| 🍎 **macOS (Apple Silicon)** | `Noise-2.2.5-macOS-AppleSilicon-arm64.dmg` |
+| 🍎 **macOS (Intel)** | `Noise-2.2.5-macOS-Intel-x64.dmg` |
+| 🐧 **Linux** | `noise-2.2.5.tar.gz` |
 
-SHA-256 checksums for all 2.2.4 builds are included in `SHA256SUMS-2.2.4.txt`.
+SHA-256 checksums for all 2.2.5 builds are included in `SHA256SUMS-2.2.5.txt`.
 
-> **Upgrading from 2.0.0:** the GitHub account was renamed from `pipio2314-cell` to `020KIKI`. Please download 2.2.4 manually once; after that, future updates work automatically.
+> **Upgrading from 2.0.0:** the GitHub account was renamed from `pipio2314-cell` to `020KIKI`. Please download 2.2.5 manually once; after that, future updates work automatically.
 >
-> **Upgrading from 2.2.1:** the old updater needs one manual update. Download 2.2.4 once; after that, Windows self-updates work.
+> **Upgrading from 2.2.1:** the old updater needs one manual update. Download 2.2.5 once; after that, Windows self-updates work.
 >
 > **Upgrading from 2.2.2:** Windows uses the in-app ZIP self-update, macOS keeps the DMG workflow and Linux updates the tar.gz in place.
 >
 > **Upgrading from 2.2.0 (installed):** 2.2.0 uses the installer once for this update. After that, Windows updates are in-app via ZIP.
 >
-> **Upgrading from 2.2.0 (portable ZIP):** extract `Noise-2.2.4-win.zip` over the old folder once, then start `Noise.exe`. Future updates are in-app.
+> **Upgrading from 2.2.0 (portable ZIP):** extract `Noise-2.2.5-win.zip` over the old folder once, then start `Noise.exe`. Future updates are in-app.
 
 NOISE is freeware for personal, non-commercial use. See [LICENSE](LICENSE) for the full terms.
 
@@ -133,7 +137,7 @@ NOISE is freeware for personal, non-commercial use. See [LICENSE](LICENSE) for t
 ## 🚀 Installation
 
 ### Windows
-Extract `Noise-2.2.4-win.zip` and run **`Noise.exe`**. No installation required.
+Extract `Noise-2.2.5-win.zip` and run **`Noise.exe`**. No installation required.
 
 ### macOS
 1. Open the DMG and drag **Noise.app** into **Applications**.
@@ -151,8 +155,8 @@ sudo xattr -rd com.apple.quarantine /Applications/Noise.app
 
 ### Linux
 ```bash
-tar -xzf noise-2.2.4.tar.gz
-cd noise-2.2.4
+tar -xzf noise-2.2.5.tar.gz
+cd noise-2.2.5
 ./noise          # or ./start-noise.sh
 ```
 
