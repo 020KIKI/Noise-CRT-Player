@@ -22,29 +22,32 @@ own your music. With NOISE you experience that entire library through an interfa
 like it was ripped straight out of a nineties cyberpunk hacker den.
 
 <p align="center">
-  <img src="assets/hero.jpg" alt="NOISE hero" width="100%" />
+  <img src="assets/readme-library.webp" alt="NOISE library view with a demo album collection" width="100%" />
+  <br />
+  <sub>Demo library: every album, artist and track shown here is fictional.</sub>
 </p>
 
 ---
 
-## ✨ Highlights
+## Highlights
 
-| | Feature |
+| Feature | What it does |
 |---|---|
-| 🖥️ | **Authentic CRT aesthetic** — phosphor glow, scanlines, curvature & flicker |
-| 🎛️ | **8 phosphor themes** — classic green, amber, ice white, cyberpunk, synthwave, blood quartz, arcade '84, custom |
-| 🎨 | **Font presets** — Classic, Terminal (Share Tech Mono) and Modern (Be Vietnam Pro) |
-| 🎧 | **Real crossfade** — equal-power blending from 1–12 seconds (off by default) |
-| ⚡ | **Gapless playback** & smart next-track preloading |
-| 🎚️ | **5-band parametric EQ** + live audio visualizer (oscilloscope, spectrum, radar, starfield, ASCII) |
-| 🖼️ | **Fullscreen Stage** — huge album art with reactive aura and CRT channel-change static |
-| 👥 | **Cyber Lounge** — create rooms, chat with friends and share what you're listening to in real time |
-| 🤖 | **Discodrome bridge** — Discord Rich Presence & remote control |
-| 🔁 | **Freeware & portable** — Windows, macOS and Linux builds, no account required |
+| **Authentic CRT aesthetic** | Phosphor glow, scanlines, curvature and flicker in a native desktop shell. |
+| **8 phosphor themes** | Classic green, amber, ice white, cyberpunk, synthwave, blood quartz, arcade '84 and a full custom palette. |
+| **Custom colour studio** | Pick a phosphor colour with the hex field, RGB sliders, brightness control or the screen pipette, then choose a separate accent. |
+| **3 font presets** | Classic, Terminal (Share Tech Mono) and Modern (Be Vietnam Pro). |
+| **Real crossfade** | Equal-power blending from 1–12 seconds, disabled by default. |
+| **Gapless playback** | Smart next-track preloading so album runs never break. |
+| **5-band parametric EQ** | Live visualizers: oscilloscope, spectrum, radar, starfield and ASCII. |
+| **Fullscreen Stage** | Huge album art, a reactive aura, CRT channel-change static and synchronized live lyrics. |
+| **Cyber Lounge** | Create rooms, chat with friends and share what you're listening to in real time. |
+| **Discodrome bridge** | Discord Rich Presence and remote playback through the [Discodrome bot](https://github.com/7eventy7/discodrome). |
+| **Freeware & portable** | Windows, macOS and Linux builds. No account required. |
 
 ---
 
-## 🆕 What's new in 2.2.6
+## What's new in 2.2.6
 
 2.2.6 is a focused polish release on top of 2.2.5: deleted server items no longer leave dead folders behind, the screen pipette works across the desktop with a visible overlay, and both phosphor and accent colours get a real hex picker.
 
@@ -55,7 +58,7 @@ like it was ripped straight out of a nineties cyberpunk hacker den.
 
 ---
 
-## 🎧 Playback & Crossfade
+## Playback & Crossfade
 
 NOISE uses **two audio decks** for seamless transitions:
 
@@ -68,7 +71,13 @@ NOISE uses **two audio decks** for seamless transitions:
 
 ---
 
-## 🎨 Design System
+## Discord integration
+
+NOISE talks to **[Discodrome](https://github.com/7eventy7/discodrome)**, a self-hosted Discord music bot for Subsonic-compatible servers. Open **Settings → Integrations**, point NOISE at the bot's local HTTP API, and send the current track, album, playlist or a random pick straight to your Discord voice channel. Discord playback can also drive NOISE, so both players stay in sync. The companion browser extension is included in `discodrome extension/`.
+
+---
+
+## Design System
 
 - **8 phosphor themes**, each emulating a real vintage display.
 - **3 font presets** — switch instantly under *Settings → Display*.
@@ -78,23 +87,34 @@ NOISE uses **two audio decks** for seamless transitions:
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### 🎵 Library View
+The library view above uses a fictional demo collection, so no personal library data or server addresses are shown.
+
+### Fullscreen Stage
+
 <p align="center">
-  <img src="assets/Screenshot_1.webp" alt="NOISE library view" width="100%" />
+  <img src="assets/readme-stage.webp" alt="NOISE fullscreen stage with album artwork" width="100%" />
 </p>
 
-### 🖥️ Fullscreen Stage
+### Stage with Live Lyrics
+
 <p align="center">
-  <img src="assets/Screenshot_2.webp" alt="NOISE fullscreen stage" width="100%" />
+  <img src="assets/readme-stage-lyrics.webp" alt="NOISE fullscreen stage with synchronized live lyrics" width="100%" />
 </p>
 
-### 🪟 Widget & Mini Player
+### Custom Colors in Settings
+
+<p align="center">
+  <img src="assets/readme-custom-colors.webp" alt="NOISE custom phosphor and accent color studio" width="100%" />
+</p>
+
+### Widget & Mini Player
+
 <table align="center">
   <tr>
-    <td align="center"><img src="assets/Screenshot_3.webp" alt="NOISE widget player" width="340" /></td>
-    <td align="center"><img src="assets/Screenshot_4.webp" alt="NOISE mini player" width="340" /></td>
+    <td align="center"><img src="assets/readme-widget.webp" alt="NOISE widget player" width="280" /></td>
+    <td align="center"><img src="assets/readme-mini.webp" alt="NOISE mini player" width="500" /></td>
   </tr>
   <tr>
     <td align="center"><b>Widget Player</b></td>
@@ -104,16 +124,16 @@ NOISE uses **two audio decks** for seamless transitions:
 
 ---
 
-## 📦 Download
+## Download
 
 Head over to the **[Releases](../../releases)** tab and grab the build for your system:
 
 | Platform | File |
 |---|---|
-| 🪟 **Windows** | `Noise-2.2.6-win.zip` (or the `.exe` installer) |
-| 🍎 **macOS (Apple Silicon)** | `Noise-2.2.6-macOS-AppleSilicon-arm64.dmg` |
-| 🍎 **macOS (Intel)** | `Noise-2.2.6-macOS-Intel-x64.dmg` |
-| 🐧 **Linux** | `noise-2.2.6.tar.gz` |
+| **Windows** | `Noise-2.2.6-win.zip` (or the `.exe` installer) |
+| **macOS (Apple Silicon)** | `Noise-2.2.6-macOS-AppleSilicon-arm64.dmg` |
+| **macOS (Intel)** | `Noise-2.2.6-macOS-Intel-x64.dmg` |
+| **Linux** | `noise-2.2.6.tar.gz` |
 
 SHA-256 checksums for all 2.2.6 builds are included in `SHA256SUMS-2.2.6.txt`.
 
@@ -131,12 +151,14 @@ NOISE is freeware for personal, non-commercial use. See [LICENSE](LICENSE) for t
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Windows
+
 Extract `Noise-2.2.6-win.zip` and run **`Noise.exe`**. No installation required.
 
 ### macOS
+
 1. Open the DMG and drag **Noise.app** into **Applications**.
 2. Because the app is unsigned (not from the Mac App Store), Gatekeeper may block the
    first launch. Open **Terminal** and run:
@@ -151,6 +173,7 @@ sudo xattr -rd com.apple.quarantine /Applications/Noise.app
 > desktop — no separate Space, and you can keep working.
 
 ### Linux
+
 ```bash
 tar -xzf noise-2.2.6.tar.gz
 cd noise-2.2.6
@@ -159,7 +182,7 @@ cd noise-2.2.6
 
 ---
 
-## 📄 License
+## License
 
 NOISE is **freeware**, not open source.
 
@@ -171,29 +194,29 @@ See [LICENSE](LICENSE) for the full terms. Third-party components remain under t
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - **Frontend:** React 19 + TypeScript + Vite + Tailwind CSS v4
 - **Desktop:** Electron 43 (frameless transparent window, custom CRT chrome)
 - **Audio:** Web Audio API (5-band EQ, analyser, dual-deck crossfade)
 - **Backend protocol:** Subsonic REST v1.16.1 (Navidrome compatible)
 - **Realtime Lounge:** Firebase Realtime Database
-- **Integrations:** Discodrome Discord bot bridge
+- **Integrations:** [Discodrome](https://github.com/7eventy7/discodrome) Discord bot bridge and the NOISE browser extension
 
 ---
 
-## 🎨 Customizing
+## Customizing
 
 Everything visual lives in **Settings**:
 
-- **Display** — themes, color palette, CRT effects, fonts, card style
+- **Display** — themes, custom phosphor and accent colours, CRT effects, fonts, card style
 - **Playback** — crossfade on/off + duration
 - **Miniplayer** — transparency and auto-hide
 - **Equalizer** — presets and 5-band tuning
 
 ---
 
-## 🐞 Bug Reports
+## Bug Reports
 
 Bug reports are welcome! Please open an issue with:
 
@@ -207,7 +230,7 @@ Bug reports are welcome! Please open an issue with:
 
 ---
 
-## 💛 A note from the developer
+## A note from the developer
 
 I built this project because I wanted a music player that actually had some soul.
 I hope you enjoy using it just as much as I enjoyed bringing it to life.
