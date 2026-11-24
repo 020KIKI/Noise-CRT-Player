@@ -21,6 +21,8 @@ If you run a **Navidrome** or **Subsonic** server, you already know how great it
 own your music. With NOISE you experience that entire library through an interface that feels
 like it was ripped straight out of a nineties cyberpunk hacker den.
 
+**[noise.xo.je](https://noise.xo.je/?i=1)** · screenshots, downloads and the latest release.
+
 <p align="center">
   <img src="assets/readme-library.webp" alt="NOISE library view with a demo album collection" width="100%" />
   <br />
@@ -41,7 +43,7 @@ like it was ripped straight out of a nineties cyberpunk hacker den.
 | **Gapless playback** | Smart next-track preloading so album runs never break. |
 | **5-band parametric EQ** | Live visualizers: oscilloscope, spectrum, radar, starfield and ASCII. |
 | **Fullscreen Stage** | Huge album art, a reactive aura, CRT channel-change static and synchronized live lyrics. |
-| **Cyber Lounge** | Create rooms, chat with friends and share what you're listening to in real time. |
+| **Chat & sharing** | A group lounge and private DMs with playable shares for albums, playlists, artists and individual tracks. |
 | **Discodrome bridge** | Discord Rich Presence and remote playback through the [Discodrome bot](https://github.com/7eventy7/discodrome). |
 | **Freeware & portable** | Windows, macOS and Linux builds. No account required. |
 
@@ -84,6 +86,22 @@ NOISE talks to **[Discodrome](https://github.com/7eventy7/discodrome)**, a self-
 - **Library card styles** — *Minimal* (cover + text) or *Boxed* (framed card).
 - **Collapsible action bar** — all player actions behind one "more" button that slides open.
 - **Frosted UI pills**, accent glows and subtle CRT motion everywhere.
+
+---
+
+## Chat & sharing
+
+NOISE is a player, but it is also a place to listen together. Open a lounge, share the room code and the members appear in the sidebar. Drop an **album**, **playlist**, **artist** or **single track** into the chat — every shared card stays playable, so the room can play or queue it without leaving the conversation. Keep it in the group channel or open a **private DM** with any member.
+
+<p align="center">
+  <img src="assets/readme-chat.webp" alt="NOISE chat lounge with shared album, playlist, artist and track cards" width="82%" />
+</p>
+
+<p align="center">
+  <img src="assets/readme-chat-dm.webp" alt="NOISE private direct message with a shared track" width="64%" />
+  <br />
+  <sub>Group lounge and private DMs — sharing without leaving the player.</sub>
+</p>
 
 ---
 
